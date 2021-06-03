@@ -27,10 +27,11 @@ btnPlus.addEventListener('click', function (event) {
 });
 
 btnHeart.addEventListener('click', function (event) {
-  secAry.push(sec);
+  const secLike = sec
+  secAry.push(secLike);
   secAry.sort((el1, el2) => el1 - el2);
-  const secItemStart = secAry.indexOf(sec);
-  const secItemEnd = secAry.lastIndexOf(sec);
+  const secItemStart = secAry.indexOf(secLike);
+  const secItemEnd = secAry.lastIndexOf(secLike);
   console.log("secAry = " + secAry);
   console.log("secItemStart = " + secItemStart);
   console.log("secItemEnd = " + secItemEnd);
