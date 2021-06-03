@@ -27,11 +27,10 @@ btnPlus.addEventListener('click', function (event) {
 });
 
 btnHeart.addEventListener('click', function (event) {
-  const secLike = sec;
-  secAry.push(secLike);
+  secAry.push(sec);
   secAryCopy = secAry.slice().sort((el1, el2) => el1 - el2);
-  const secItemStart = secAryCopy.indexOf(secLike);
-  const secItemEnd = secAryCopy.lastIndexOf(secLike);
+  const secItemStart = secAryCopy.indexOf(sec);
+  const secItemEnd = secAryCopy.lastIndexOf(sec);
   const secItemAry = secAryCopy.slice(secItemStart, secItemEnd + 1);
   const secItemCount = secItemAry.length
   console.log("secAryCopy = " + secAryCopy + "|" + "secItemStart = " + secItemStart + "|" + "secItemEnd = " + secItemEnd + "|" + "secItemAry = " + secItemAry + "|" + "secItemCount = " + secItemCount);
