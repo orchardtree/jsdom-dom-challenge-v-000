@@ -29,13 +29,13 @@ btnPlus.addEventListener('click', function (event) {
 btnHeart.addEventListener('click', function (event) {
   const secLike = sec
   secAry.push(secLike);
-  secAry.sort((el1, el2) => el1 - el2);
-  const secItemStart = secAry.indexOf(secLike);
-  const secItemEnd = secAry.lastIndexOf(secLike);
-  console.log("secAry = " + secAry);
+  secAryCopy = secAry.slice().sort((el1, el2) => el1 - el2);
+  const secItemStart = secAryCopy.indexOf(secLike);
+  const secItemEnd = secAryCopy.lastIndexOf(secLike);
+  console.log("secAryCopy = " + secAryCopy);
   console.log("secItemStart = " + secItemStart);
   console.log("secItemEnd = " + secItemEnd);
-  const secItemAry = secAry.splice(secItemStart, secItemEnd);
+  //const secItemAry = secAry.splice(secItemStart, secItemEnd);
   //const secItemCount = secItemAry.length
   //console.log("secItemAry = " + secItemAry);
   //console.log("secItemCount = " + secItemCount);
