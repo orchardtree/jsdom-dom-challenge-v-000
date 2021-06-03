@@ -35,13 +35,12 @@ btnHeart.addEventListener('click', function (event) {
   const secItemCount = secItemAry.length
   console.log("secAryCopy = " + secAryCopy + "|" + "secItemStart = " + secItemStart + "|" + "secItemEnd = " + secItemEnd + "|" + "secItemAry = " + secItemAry + "|" + "secItemCount = " + secItemCount);
   if (secItemCount == 1) {
-      //const likeNode = document.createElement('li');
-      //let msgLikeNode = document.createTextNode(`${sec} has been liked ${secItemCount} time`);
-      //likeNode.appendChild(msgLikeNode);
-      //document.querySelector('ul.likes').appendChild(likeNode).id = sec;
+      const likeNode = document.createElement('li');
+      let msgLikeNode = document.createTextNode(`${sec} has been liked ${secItemCount} time`);
+      likeNode.appendChild(msgLikeNode);
+      document.querySelector('ul.likes').appendChild(likeNode).id = sec;
     } else {
-      //console.log("error")
-      //document.getElementById(sec).innerHTML = `${sec} has been liked ${secItemCount} times`;
+      document.getElementById(sec).innerHTML = `${sec} has been liked ${secItemCount} times`;
     }
 });
 
