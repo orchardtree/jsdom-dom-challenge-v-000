@@ -33,7 +33,6 @@ btnHeart.addEventListener('click', function (event) {
   const secItemEnd = secAryCopy.lastIndexOf(sec);
   const secItemAry = secAryCopy.slice(secItemStart, secItemEnd + 1);
   const secItemCount = secItemAry.length
-  console.log("secAryCopy = " + secAryCopy + "|" + "secItemStart = " + secItemStart + "|" + "secItemEnd = " + secItemEnd + "|" + "secItemAry = " + secItemAry + "|" + "secItemCount = " + secItemCount);
   if (secItemCount == 1) {
       const likeNode = document.createElement('li');
       let msgLikeNode = document.createTextNode(`${sec} has been liked ${secItemCount} time`);
