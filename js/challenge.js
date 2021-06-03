@@ -32,7 +32,7 @@ btnHeart.addEventListener('click', function (event) {
   secAryCopy = secAry.slice().sort((el1, el2) => el1 - el2);
   const secItemStart = secAryCopy.indexOf(secLike);
   const secItemEnd = secAryCopy.lastIndexOf(secLike);
-  const secItemAry = secAryCopy.slice(secItemStart, secItemEnd);
+  const secItemAry = secAryCopy.slice(secItemStart, secItemEnd + 1);
   console.log("secAryCopy = " + secAryCopy + "|" + "secItemStart = " + secItemStart + "|" + "secItemEnd = " + secItemEnd + "|" + "secItemAry = " + secItemAry);
   //const secItemCount = secItemAry.length
   //console.log("secItemAry = " + secItemAry);
