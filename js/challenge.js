@@ -27,7 +27,7 @@ btnPlus.addEventListener('click', function (event) {
 });
 
 btnHeart.addEventListener('click', function (event) {
-  const secLike = sec
+  const secLike = sec;
   secAry.push(secLike);
   secAryCopy = secAry.slice().sort((el1, el2) => el1 - el2);
   const secItemStart = secAryCopy.indexOf(secLike);
@@ -35,7 +35,7 @@ btnHeart.addEventListener('click', function (event) {
   console.log("secAryCopy = " + secAryCopy);
   console.log("secItemStart = " + secItemStart);
   console.log("secItemEnd = " + secItemEnd);
-  //const secItemAry = secAry.splice(secItemStart, secItemEnd);
+  const secItemAry = secAryCopy.splice(secItemStart, secItemEnd);
   //const secItemCount = secItemAry.length
   //console.log("secItemAry = " + secItemAry);
   //console.log("secItemCount = " + secItemCount);
