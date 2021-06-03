@@ -57,9 +57,9 @@ btnPause.addEventListener('click', function (event) {
     btnPause.className = "resume";
     btnPause.innerHTML = " resume ";
     clearInterval(timer)
-    //btnMinus.disabled = true;
-    //btnPlus.disabled = true;
-    //btnHeart.disabled = true;
+    btnMinus.disabled = true;
+    btnPlus.disabled = true;
+    btnHeart.disabled = true;
     btnSubmit.disabled = true;
   }
 });
