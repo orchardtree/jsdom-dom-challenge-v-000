@@ -35,7 +35,7 @@ btnHeart.addEventListener('click', function (event) {
   console.log("secAry = " + secAry);
   console.log("secItemStart = " + secItemStart);
   console.log("secItemEnd = " + secItemEnd);
-  //const secItemAry = secAry.splice(secItemStart, secItemEnd);
+  const secItemAry = secAry.splice(secItemStart, secItemEnd);
   //const secItemCount = secItemAry.length
   //console.log("secItemAry = " + secItemAry);
   //console.log("secItemCount = " + secItemCount);
